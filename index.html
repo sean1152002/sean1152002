@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>瀚瀚的商店 - 欢迎光临</title> <欢迎你！！>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>瀚瀚的Store</h1>
+        <div id="cart-icon">🛒 <span id="cart-count">0</span></div>
+    </header>
+
+    <main>
+        <div id="product-list"></div>
+    </main>
+
+    <div id="cart-sidebar">
+        <h2>购物车</h2>
+        <div id="cart-items"></div>
+        <div id="cart-total"></div>
+        <button id="checkout-btn">结账</button>
+    </div>
+
+    <div id="checkout-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>结账</h2>
+            <div id="checkout-items"></div>
+            <div id="checkout-total"></div>
+            <button id="show-payment-code">显示支付宝收款码</button>
+            <div id="payment-code" style="display: none;">
+                <img src="images/支付宝.jpg" alt="支付宝收款码" style="max-width: 200px;">
+                <p>请使用支付宝扫描上方二维码完成支付</p>
+                <button id="confirm-payment">确认已支付</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
